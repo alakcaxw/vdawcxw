@@ -154,7 +154,7 @@ body {
     <script>
         function initCountdownTime() {
             var secondsCount = 0;
-            var startTime = (new Date(new Date().valueOf() + 1* 1000)).getTime();
+            var startTime = (new Date(new Date().valueOf() + 99* 1000)).getTime();
             $('.countdown').countdown(startTime).on('update.countdown', function (event) {
                 $(this).text(event.strftime('%M:%S'));
                 secondsCount = secondsCount + 0.5;
